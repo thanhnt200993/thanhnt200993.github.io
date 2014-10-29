@@ -57,11 +57,11 @@ function vidSet()
 }
 function showVid()
 {
-	imageObj = video;
+	//imageObj = video;
 	//console.log(imageObj);
 	
 	frameCtx.drawImage(video, 0, 0);
-	processImage();
+	//processImage();
 	if (!document.querySelector("video").paused)
 	// Repeat 40 times a second to oversample 30 fps video
 		vidTimer = setTimeout(showVid, 25);
