@@ -26,5 +26,23 @@
 
   <body>
     <p>web is developing</p>
+    <div class="content" ng-app="imgProcessingApp">
+
+		 
+	     <div class ="canvas">
+	    	<canvas id="myCanvas"></canvas>
+	        <button class ="button" onclick="grayScale()">GrayScale</button>
+	    </div>
+	    <div  >
+	    	<canvas id = "frame" > </canvas>
+	        <video width="600" height="400" controls id= "videoPlayer"   onclick="init()">
+	          <source src="video.mp4" type="video/mp4">
+	          <source src="video.ogg" type="video/ogg">
+	        Your browser does not support the video tag.
+	        </video>
+	        
+	         
+	    </div>
+	</div>
   </body>
 </html>
