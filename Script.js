@@ -57,7 +57,7 @@ function vidSet()
 }
 function showVid()
 {
-	//imageObj = video;
+	imageObj = video;
 	//console.log(imageObj);
 	
 	frameCtx.drawImage(video, 0, 0);
