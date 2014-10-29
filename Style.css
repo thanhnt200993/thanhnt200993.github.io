@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0 auto;
+}
+.title
+{
+	font-size: 30px;
+	color:#F0F;
+	text-align:center;
+}
+.header
+{
+	width:900px;
+	height:100px;
+	border : solid 1px;
+	border-color:black;
+	margin:0 auto;
+	
+}
+
+.content{
+	width:900px;
+	height:2000px;
+	border : solid 1px;
+	border-color:black;
+	margin:0 auto;
+	font-size: 16px;
+	
+}
+
+#myCanvas
+{
+	display:block;
+	margin:auto;
+	border:1px solid #000;
+}
+
+.button{
+	display:block;
+	width:100px;
+	height:30px;
+	margin:auto;
+}
+#videoPlayer
+{
+	display:block;
+	margin:auto;
+	position:relative;
+	
+	padding-top:150px;
+}
+#frame 
+{
+	position:absolute;
+	margin:0 auto;
+	width:900px;
+	height:700px;
+	border:1px solid black;
+	z-index: -1;
+}
