@@ -13,11 +13,17 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <script type="text/javascript">
+
+
+    <link href="Style.css" type="text/css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="Script.js" type="text/javascript"></script>
+	<title>Image & Video Processing Application</title>
       $(document).ready(function () {
         $('#main_content').headsmart()
       })
     </script>
-    <title>Thanhnt200993.github.io by thanhnt200993</title>
   </head>
 
   <body>
@@ -34,7 +40,24 @@
           <span class="right-tail"></span>
         </span>
       </header>
+	<div class="content" ng-app="imgProcessingApp">
 
+		 
+	     <div class ="canvas">
+	    	<canvas id="myCanvas"></canvas>
+	        <button class ="button" onclick="grayScale()">GrayScale</button>
+	    </div>
+	    <div  >
+	    	<canvas id = "frame" > </canvas>
+	        <video width="600" height="400" controls id= "videoPlayer"   onclick="init()">
+	          <source src="video.mp4" type="video/mp4">
+	          <source src="video.ogg" type="video/ogg">
+	        Your browser does not support the video tag.
+	        </video>
+	        
+	         
+	    </div>
+	</div>
       <div id="no-downloads">
         <span class="inner">
         </span>
